@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="heart.png">
+    <title>^^</title>
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+    </style>
+</head>
+
+
+
+<body>
+
+    <div class="snow_wrap">
+        <div class="snow"></div>
+    </div>
+
+    
+    
+    <div id="drag-container">
+        <div id="spin-container">
+          <video id="myVideo1" autoplay style="z-index: 10000;" onclick="MS('1')">
+            <source src="video/str1.mp4" type="video/mp4">
+          </video>
+          
+          
+          
+          <img src="img/anh5.jfif" alt="">
+          <img src="img/lacduong.jfif" alt="">
+          <img src="img/bk1.jfif" alt="">
+          <img src="img/anh3.jfif" alt="">
+          <video id="myVideo2" autoplay  onclick="MS('2')">
+            <source src="video/str2.mp4" type="video/mp4">
+          </video>
+          <img src="img/anh6.jfif" alt="">
+          <img src="img/anhbk2.jfif" alt="">
+          <!-- <img src="img/anhbk3.jfif" alt="">
+          <img src="img/anhbk3.jfif" alt="">  -->
+
+  
+
+
+          
+            <p>Linh Bốngg</p>
+          
+        
+        </div>
+        <div id="ground"></div>
+      </div>
+      
+      <div id="music-container"></div>
+      <div id="canva">
+    </div>
+    <audio id="myAudio" controls autoplay style="display: none;">
+      <source src="ms.mp3" type="audio/mpeg">
+    </audio>
+    <script src="main.js"></script>
+</body>
+</html>
+
+<style>
+  
+  @media only screen and (max-width: 450px) {
+    #spin-container > p {
+        font-size: 42px;
+        text-shadow: 0 0 5px white;
+        font-family: cursive;
+      }
+}
+
+#spin-container > p {
+        text-shadow: 0 0 5px white;
+      }
+
+      * {
+        font-family: cursive;
+      }
+</style>
+
+
+
+<script>
+  
+  var audio = document.getElementById("myAudio");
+  audio.volume = 0.1;
+
+  document.addEventListener("touchstart", function(event) {   
+            audio.play();
+            video.volume = 0;
+  });
+
+  // Lấy đối tượng video
+  var video = document.getElementById("myVideo1");
+  // video.play();
+  
+  // Set âm lượng của video thành 0 (tắt âm thanh)
+  // video.volume = 0;
+
+  
+
+
+</script>
+
+<script>
+
+</script>
